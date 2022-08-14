@@ -180,7 +180,6 @@ li{
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   
   em {
