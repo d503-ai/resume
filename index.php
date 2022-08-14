@@ -1,3 +1,7 @@
+<?php
+    include "config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +9,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
-    <title>d503ai</title>
+    <title><?php echo $lang['title'] ?></title>
 </head>
 <body>
     <div id="container--main">
         <nav>
             <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-              </label>
-              <em>Dark mode</em>
-            </div>
-            <div class="">
-
+                <div class="button-switch">    
+                    <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                    </label>
+                    <em ><?php echo $lang['mode'] ?></em>
+                </div>
+                <div>
+                    <a href="?lang=en">English</a>
+                    | <a href="?lang=uk">Українська</a>
+                </div>
             </div>
         </nav>
 
